@@ -3,7 +3,8 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using System.Linq;
-using static OopTaskProject.Chris.Path;
+using OopTaskProject.Shared;
+using static OopTaskProject.Shared.Path;
 
 namespace OopTaskProject.Chris
 {

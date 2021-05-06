@@ -1,3 +1,5 @@
+using OopTaskProject.Shared;
+
 namespace OopTaskProject.Chris
 {
     interface IMainMap

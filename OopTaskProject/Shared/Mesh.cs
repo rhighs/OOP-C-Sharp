@@ -1,4 +1,4 @@
-namespace OopTaskProject.Chris
+namespace OopTaskProject.Shared
 {
     public class Mesh
     {
