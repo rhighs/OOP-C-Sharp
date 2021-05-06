@@ -9,6 +9,8 @@ namespace OopTaskProject.Chris
     public class PathFinderExecutor : IPathFinderExecutor
     {
         private Node scene;
+        private IList<Path.Waypoint> nextPath = null;
+        private Vector3f nextTarget = null;
 
         public PathFinderExecutor(Node scene)
         {
@@ -20,6 +22,17 @@ namespace OopTaskProject.Chris
             var res = Task.Run(() =>
                     {
                         PathFinder pf = new PathFinder(scene);
+                        if (nextPath != null)
+                        {
+                            pf.supplyPath(nextPath);
+                            nextPath = null;
+                        }
+                        if (nextTarget != null)
+                        {
+                            var tmp = nextTarget;
+                            nextTarget = null;
+                            return pf.getPath(currentPos, tmp);
+                        }
                         return pf.getPath(currentPos, pf.getRandomPoint());
                     });
             return res;
@@ -28,6 +41,16 @@ namespace OopTaskProject.Chris
         public void shutdown()
         {
 
+        }
+
+        public void supplyNextPath(IList<Path.Waypoint> path)
+        {
+            this.nextPath = path;
+        }
+
+        public void supplyTarget(Vector3f point)
+        {
+            this.nextTarget = point;
         }
     }
 }

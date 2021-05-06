@@ -1,3 +1,5 @@
+using System;
+
 namespace OopTaskProject.Shared
 {
     public class Vector3f
@@ -18,9 +20,30 @@ namespace OopTaskProject.Shared
             Z = v.Z;
         }
 
+        public Vector3f(double x, double y, double z)
+        {
+            X = x;
+            Y = y;
+            Z = z;
+        }
+
         public int distance(Vector3f other)
         {
             return 0;
+        }
+
+        public override string ToString()
+        {
+            return X.ToString() + ", " + Y.ToString() + ", " + Z.ToString();
+        }
+
+        public static Vector3f MakeRandom(Random rng, double scale)
+        {
+            return new Vector3f(
+                rng.NextDouble() * scale,
+                rng.NextDouble() * scale,
+                rng.NextDouble() * scale
+            );
         }
     }
 }

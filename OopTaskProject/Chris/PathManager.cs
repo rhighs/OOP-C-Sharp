@@ -55,6 +55,13 @@ namespace OopTaskProject.Chris
 
         public void setPosition(Waypoint waypoint)
         {
+            /*
+            if (waypoint == null)
+            {
+                return;
+            }
+            Vector3f v = waypoint.Position - personSpatial.getLocalTranslation();
+            */
         }
 
         public bool isPositionNear(Waypoint waypoint)

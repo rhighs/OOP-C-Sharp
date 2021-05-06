@@ -1,4 +1,6 @@
 using System;
+using System.Collections;
+using System.Collections.Generic;
 using OopTaskProject.Shared;
 
 namespace OopTaskProject.Chris
@@ -37,6 +39,16 @@ namespace OopTaskProject.Chris
         public void shutdown()
         {
             pathFinder.shutdown();
+        }
+
+        public void supplyNextPath(IList<Path.Waypoint> path)
+        {
+            pathFinder.supplyNextPath(path);
+        }
+
+        public void supplyNextTarget(Vector3f point)
+        {
+            pathFinder.supplyTarget(point);
         }
     }
 }
