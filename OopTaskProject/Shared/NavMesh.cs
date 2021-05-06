@@ -2,7 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 
-namespace OopTaskProject.Chris
+namespace OopTaskProject.Shared
 {
     public class NavMesh
     {

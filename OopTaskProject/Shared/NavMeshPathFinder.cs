@@ -1,6 +1,6 @@
 using System;
 
-namespace OopTaskProject.Chris
+namespace OopTaskProject.Shared
 {
     class NavMeshPathFinder
     {
