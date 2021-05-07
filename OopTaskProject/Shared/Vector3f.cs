@@ -45,5 +45,17 @@ namespace OopTaskProject.Shared
                 rng.NextDouble() * scale
             );
         }
+
+        public override bool Equals(Object obj)
+        {
+            if (!(obj is Vector3f))
+            {
+                return false;
+            }
+            Vector3f vec = (Vector3f) obj;
+            return vec.X == X
+                && vec.Y == Y
+                && vec.Z == Z;
+        }
     }
 }
