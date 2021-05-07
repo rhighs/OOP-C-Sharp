@@ -7,7 +7,7 @@ using static OopTaskProject.Shared.JME3.Items.Path;
 
 namespace OopTaskProject.Tests
 {
-    public class UnitTest1
+    public class TestPathManager
     {
         [Fact]
         public void PassingTest()

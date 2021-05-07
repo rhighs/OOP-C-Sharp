@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Threading;
 using System.Threading.Tasks;
 using OopTaskProject.Shared.JME3.Items;
 
@@ -19,6 +20,7 @@ namespace OopTaskProject.Chris
         {
             var res = Task.Run(() =>
                     {
+                        Thread.Sleep(5000);
                         PathFinder pf = new PathFinder(scene);
                         if (nextPath != null)
                         {
