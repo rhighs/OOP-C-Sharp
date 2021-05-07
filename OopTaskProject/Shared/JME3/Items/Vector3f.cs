@@ -1,6 +1,6 @@
 using System;
 
-namespace OopTaskProject.Shared
+namespace OopTaskProject.Shared.JME3.Items
 {
     public class Vector3f
     {

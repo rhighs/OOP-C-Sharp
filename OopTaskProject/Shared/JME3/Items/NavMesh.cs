@@ -1,8 +1,6 @@
-using System;
-using System.Collections;
 using System.Collections.Generic;
 
-namespace OopTaskProject.Shared
+namespace OopTaskProject.Shared.JME3.Items
 {
     public class NavMesh
     {
