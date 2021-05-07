@@ -19,7 +19,7 @@ namespace Montalti
         {
             actions
                 .Where(a => a.Key == actionName)
-                .ForEach(a => a.Value())
+                .ForEach(a => a.Value());
         }
 
         public void AddAction(string actionName, Action action, Trigger inputTrigger)

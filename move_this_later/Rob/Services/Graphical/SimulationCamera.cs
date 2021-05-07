@@ -44,7 +44,11 @@ namespace Montalti
 
         public void DetachEntity()
         {
-            _entity == null ? return : _entity = null; 
+            if (_entity == null)
+            {
+                return;
+            }
+            _entity = null;
         }
 
         private void FollowCurrentEntity(){

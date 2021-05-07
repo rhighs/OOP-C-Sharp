@@ -5,6 +5,7 @@ namespace Montalti
 {
     interface ISimpleApplication
     {
+        /*
         public Node GetGuiNode();
 
         public StateManager GetStateManager(); 
@@ -20,5 +21,6 @@ namespace Montalti
         public Camera GetCamera();
 
         public ViewPort GetViewPort();
+        */
     }
 }

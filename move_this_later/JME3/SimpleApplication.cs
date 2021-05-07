@@ -1,11 +1,12 @@
 using System;
-using Items;
+//using Items;
 
 namespace Montalti
 {
     class SimpleApplication : ISimpleApplication
     {
 
+        /*
         private Node guiNode;
 
         private Camera camera;
@@ -55,6 +56,7 @@ namespace Montalti
             return stateManager;
         }
 
+        */
     }
 
 }
