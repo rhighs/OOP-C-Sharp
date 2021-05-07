@@ -1,4 +1,4 @@
-using static OopTaskProject.Shared.Path;
+using static OopTaskProject.Shared.JME3.Items.Path;
 
 namespace OopTaskProject.Chris
 {

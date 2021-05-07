@@ -1,8 +1,6 @@
-using System;
-using System.Collections;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using OopTaskProject.Shared;
+using OopTaskProject.Shared.JME3.Items;
 
 namespace OopTaskProject.Chris
 {

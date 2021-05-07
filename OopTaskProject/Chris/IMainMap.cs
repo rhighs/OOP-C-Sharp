@@ -1,8 +1,8 @@
-using OopTaskProject.Shared;
+using OopTaskProject.Shared.JME3.Items;
 
 namespace OopTaskProject.Chris
 {
-    interface IMainMap
+    public interface IMainMap
     {
         /**
          * @return a navigation mesh, extracted from the scene

@@ -1,12 +1,10 @@
-using System;
-using System.Collections;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using OopTaskProject.Shared;
+using OopTaskProject.Shared.JME3.Items;
 
 namespace OopTaskProject.Chris
 {
-    interface IPathFinderExecutor
+    public interface IPathFinderExecutor
     {
         /**
          * @param currentPos current position of the entity

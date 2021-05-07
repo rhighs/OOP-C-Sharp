@@ -1,8 +1,7 @@
 using System;
-using System.Collections;
 using System.Collections.Generic;
-using OopTaskProject.Shared;
-using static OopTaskProject.Shared.Path;
+using OopTaskProject.Shared.JME3.Items;
+using static OopTaskProject.Shared.JME3.Items.Path;
 
 namespace OopTaskProject.Chris
 {
