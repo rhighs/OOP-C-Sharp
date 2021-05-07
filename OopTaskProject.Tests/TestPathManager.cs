@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using Xunit;
 using OopTaskProject.Chris;
@@ -11,6 +12,7 @@ namespace OopTaskProject.Tests
         [Fact]
         public void PassingTest()
         {
+            Console.WriteLine("Testing PathManager...");
             Node personNode = new Node();
             MainMap map = new MainMap();
             PathManager manager = new PathManager(map, personNode);

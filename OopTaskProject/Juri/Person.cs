@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Cov_sim
+namespace OopTaskProject.Juri
 {
     public class Person
     {
