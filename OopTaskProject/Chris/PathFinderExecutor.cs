@@ -9,14 +9,14 @@ namespace OopTaskProject.Chris
     {
         private Node scene;
         private IList<Path.Waypoint> nextPath = null;
-        private Vector3f nextTarget = null;
+        private Vector3F nextTarget = null;
 
         public PathFinderExecutor(Node scene)
         {
             this.scene = scene;
         }
 
-        public Task<IList<Path.Waypoint>> request(Vector3f currentPos)
+        public Task<IList<Path.Waypoint>> request(Vector3F currentPos)
         {
             var res = Task.Run(() =>
                     {
@@ -48,7 +48,7 @@ namespace OopTaskProject.Chris
             this.nextPath = path;
         }
 
-        public void supplyTarget(Vector3f point)
+        public void supplyTarget(Vector3F point)
         {
             this.nextTarget = point;
         }

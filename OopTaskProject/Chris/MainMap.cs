@@ -44,7 +44,7 @@ namespace OopTaskProject.Chris
             pathFinder.supplyNextPath(path);
         }
 
-        public void supplyNextTarget(Vector3f point)
+        public void supplyNextTarget(Vector3F point)
         {
             pathFinder.supplyTarget(point);
         }

@@ -20,15 +20,15 @@ namespace OopTaskProject.Tests
             /*
              * Test path. The node shall follow this path.
              */
-            var points = new List<Vector3f> {
-                new Vector3f(1.0, 1.0, 1.0),
-                new Vector3f(2.0, 2.0, 2.0),
-                new Vector3f(3.0, 3.0, 3.0),
-                new Vector3f(4.0, 4.0, 4.0),
-                new Vector3f(5.0, 5.0, 5.0),
-                new Vector3f(6.0, 6.0, 6.0),
+            var points = new List<Vector3F> {
+                new Vector3F(1.0, 1.0, 1.0),
+                new Vector3F(2.0, 2.0, 2.0),
+                new Vector3F(3.0, 3.0, 3.0),
+                new Vector3F(4.0, 4.0, 4.0),
+                new Vector3F(5.0, 5.0, 5.0),
+                new Vector3F(6.0, 6.0, 6.0),
             };
-            var target = new Vector3f(7.0, 7.0, 7.0);
+            var target = new Vector3F(7.0, 7.0, 7.0);
             Path testPath = Path.MakeFrom(points);
             map.supplyNextPath(testPath.Waypoints);
             map.supplyNextTarget(target);

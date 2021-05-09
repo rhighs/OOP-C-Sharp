@@ -68,7 +68,7 @@ namespace OopTaskProject.Chris
             {
                 return true;
             }
-            return personSpatial.getLocalTranslation().distance(waypoint.Position) <= 1;
+            return personSpatial.getLocalTranslation().Distance(waypoint.Position) <= 1;
         }
 
         public bool isPathReady()

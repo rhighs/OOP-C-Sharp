@@ -15,12 +15,12 @@ namespace Montalti
 
         private readonly float ENTITY_HEAD_OFFSET = 5f;
 
-        public Vector3f Location 
+        public Vector3F Location 
         {
             get => _camera.GetLocation();
         }
 
-        public Vector3f Direction
+        public Vector3F Direction
         {
             get => _camera.GetDirection();
         }
@@ -58,7 +58,7 @@ namespace Montalti
             }
 
             var pos = _entity.Position;
-            var fixedPos = new Vector3f(pos.X, pos.Y + ENTITY_HEAD_OFFSET, pos.Z);
+            var fixedPos = new Vector3F(pos.X, pos.Y + ENTITY_HEAD_OFFSET, pos.Z);
             _camera.SetLocation(fixedPos);
         }
         

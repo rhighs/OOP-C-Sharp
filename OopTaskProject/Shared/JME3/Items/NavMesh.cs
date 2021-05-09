@@ -6,9 +6,9 @@ namespace OopTaskProject.Shared.JME3.Items
     {
         public class Cell
         {
-            public Vector3f getRandomPoint()
+            public Vector3F getRandomPoint()
             {
-                return new Vector3f();
+                return new Vector3F();
             }
         }
 

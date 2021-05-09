@@ -34,7 +34,7 @@ namespace OopTaskProject.Chris
             this.path = path;
         }
 
-        public IList<Path.Waypoint> getPath(Vector3f start, Vector3f target)
+        public IList<Path.Waypoint> getPath(Vector3F start, Vector3F target)
         {
             if (path != null)
             {
@@ -46,9 +46,9 @@ namespace OopTaskProject.Chris
             return Path.MakeRandom(rng).Waypoints;
         }
 
-        public Vector3f getRandomPoint()
+        public Vector3F getRandomPoint()
         {
-            return Vector3f.MakeRandom(rng, 10.0);
+            return Vector3F.MakeRandom(rng, 10.0);
             //int i = rnd.Next(navmesh.Cells.Count);
             //return new Vector3f(navmesh.Cells[i].getRandomPoint());
         }

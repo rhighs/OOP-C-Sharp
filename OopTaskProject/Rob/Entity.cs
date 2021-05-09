@@ -4,10 +4,11 @@ namespace Montalti
 {
     public class Entity
     {
-        public Vector3f Position { get; set; }
+        public Vector3F Position { get; set; }
+        
         public Entity()
         {
-            Position = new Vector3f(0, 0, 0);
+            Position = new Vector3F(0, 0, 0);
         }
 
     }

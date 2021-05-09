@@ -7,14 +7,14 @@ namespace OopTaskProject.Shared.JME3.Items
     {
         public class Waypoint
         {
-            public Vector3f Position { get; private set; }
+            public Vector3F Position { get; private set; }
 
             public Waypoint()
             {
 
             }
 
-            public Waypoint(Vector3f pos)
+            public Waypoint(Vector3F pos)
             {
                 Position = pos;
             }
@@ -33,13 +33,13 @@ namespace OopTaskProject.Shared.JME3.Items
             for (int i = 0; i < 10; i++)
             {
                 path.Waypoints.Add(
-                    new Waypoint(Vector3f.MakeRandom(rng, 10.0))
+                    new Waypoint(Vector3F.MakeRandom(rng, 10.0))
                 );
             }
             return path;
         }
 
-        public static Path MakeFrom(List<Vector3f> vecs)
+        public static Path MakeFrom(List<Vector3F> vecs)
         {
             Path path = new Path();
             foreach (var v in vecs)

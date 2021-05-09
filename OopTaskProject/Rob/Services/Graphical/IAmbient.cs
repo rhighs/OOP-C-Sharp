@@ -4,9 +4,9 @@ namespace Montalti
 {
     public interface IAmbient
     {
-        public void AddSunLight(Vector3f direction);
+        public void AddSunLight(Vector3F direction);
 
-        public void AddShadowFilter(Vector3f lightSourceDirection);
+        public void AddShadowFilter(Vector3F lightSourceDirection);
 
     }
 }

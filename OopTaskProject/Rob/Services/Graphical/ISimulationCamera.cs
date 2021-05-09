@@ -5,9 +5,9 @@ namespace Montalti
     public interface ISimulationCamera
     {
 
-        public Vector3f Location { get; } 
+        public Vector3F Location { get; } 
 
-        public Vector3f Direction { get; }
+        public Vector3F Direction { get; }
 
         public void update();
 
