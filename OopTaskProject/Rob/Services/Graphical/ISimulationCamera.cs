@@ -1,6 +1,6 @@
 using OopTaskProject.Shared.JME3.Items;
 
-namespace Montalti
+namespace OopTaskProject.Rob
 {
     public interface ISimulationCamera
     {
@@ -8,6 +8,7 @@ namespace Montalti
         public Vector3F Location { get; } 
 
         public Vector3F Direction { get; }
+        public Entity AttachedEntity { get; }
 
         public void update();
 

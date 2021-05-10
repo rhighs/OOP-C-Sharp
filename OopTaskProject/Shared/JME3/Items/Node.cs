@@ -7,6 +7,8 @@ namespace OopTaskProject.Shared.JME3.Items
         public string Name { get; set; }
         private List<Spatial> childs;
 
+        public Spatial FirstChild { get; private set; }
+
         public Node()
         {
             childs = new List<Spatial>();
@@ -14,6 +16,7 @@ namespace OopTaskProject.Shared.JME3.Items
 
         public void AttachChild(Spatial child)
         {
+            FirstChild = child;
             childs.Add(child);
         }
 

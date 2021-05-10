@@ -2,7 +2,7 @@ using OopTaskProject.Chris;
 using OopTaskProject.Shared.JME3;
 using OopTaskProject.Shared.JME3.Items;
 
-namespace Montalti {
+namespace OopTaskProject.Rob {
 
     public class Locator {
         public ISimpleApplication _app;

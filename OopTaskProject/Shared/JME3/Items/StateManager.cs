@@ -4,15 +4,15 @@ namespace OopTaskProject.Shared.JME3.Items
 {
     public class StateManager
     {
-        private List<object> states;
+        public List<object> States { get; private set; }
         public StateManager()
         {
-            states = new List<object>();
+            States = new List<object>();
         }
 
         public void Attach(BulletAppState bullet)
         {
-            states.Add(bullet);
+            States.Add(bullet);
         }
     }
 }

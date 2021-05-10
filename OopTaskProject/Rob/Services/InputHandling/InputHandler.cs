@@ -3,7 +3,7 @@ using System.Linq;
 using System.Collections.Generic;
 using OopTaskProject.Shared.JME3.Items;
 
-namespace Montalti
+namespace OopTaskProject.Rob
 {
     public class InputHandler : IInputHandler, ActionListener
     {

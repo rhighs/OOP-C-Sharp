@@ -4,15 +4,15 @@ namespace OopTaskProject.Shared.JME3.Items
 {
     public class PhysicsSpace
     {
-        private List<object> objects;
+        public List<object> Objects { get; private set; }
         public PhysicsSpace()
         {
-           objects = new List<object>(); 
+            Objects = new List<object>();
         }
 
         public void Add(object obj)
         {
-            objects.Add(obj);
+            Objects.Add(obj);
         }
     }
 }

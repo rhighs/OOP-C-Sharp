@@ -1,6 +1,6 @@
 using OopTaskProject.Shared.JME3.Items;
 
-namespace Montalti
+namespace OopTaskProject.Rob
 {
     public class Ambient : IAmbient
     {

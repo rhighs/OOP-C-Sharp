@@ -2,7 +2,7 @@ using OopTaskProject.Shared.JME3.Items;
 
 namespace OopTaskProject.Shared.JME3
 {
-    class SimpleApplication : ISimpleApplication
+    public class SimpleApplication : ISimpleApplication
     {
         private Node guiNode;
 

@@ -3,6 +3,7 @@ namespace OopTaskProject.Shared.JME3.Items
     public class Spatial
     {
         private Vector3F pos;
+
         public Spatial()
         {
             defaultMaterial = new Material();

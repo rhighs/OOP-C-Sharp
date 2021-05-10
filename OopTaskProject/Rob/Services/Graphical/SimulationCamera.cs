@@ -1,15 +1,15 @@
 using OopTaskProject.Shared.JME3.Items;
 
-namespace Montalti
+namespace OopTaskProject.Rob
 {
     public class SimulationCamera : ISimulationCamera
     {
 
-        private Entity _entity;
-
         private Camera _camera;
 
         private FlyByCamera _flyByCamera;
+
+        public Entity AttachedEntity { get; private set; }
 
         private readonly float MOVE_SPEED = 30f;
 
@@ -39,25 +39,25 @@ namespace Montalti
 
         public void AttachToEntity(Entity entity)
         {
-            _entity ??= entity;
+            AttachedEntity ??= entity;
         }
 
         public void DetachEntity()
         {
-            if (_entity == null)
+            if (AttachedEntity == null)
             {
                 return;
             }
-            _entity = null;
+            AttachedEntity = null;
         }
 
         private void FollowCurrentEntity(){
-            if(_entity == null)
+            if(AttachedEntity == null)
             {
                 return; 
             }
 
-            var pos = _entity.Position;
+            var pos = AttachedEntity.Position;
             var fixedPos = new Vector3F(pos.X, pos.Y + ENTITY_HEAD_OFFSET, pos.Z);
             _camera.SetLocation(fixedPos);
         }
